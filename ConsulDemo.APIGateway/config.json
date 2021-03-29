@@ -1,0 +1,78 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:1099", //网关暴露的地址
+    //服务发现配置
+    "ServiceDiscoveryProvider": {
+      //注册中心Consul地址
+      "Host": "127.0.0.1",
+      //注册中心Consul端口号
+      "Port": 8500,
+      "Type": "Consul",
+      //以毫秒为单位，告诉Ocelot多久调用一次Consul来更改服务配置。
+      "PollingInterval": 100,
+      //如果你有在Consul上配置key/value，则在这里输入配置key。
+      "ConfigurationKey": "MyService_AB"
+    }
+  },
+  "Routes": [
+    {
+      "UseServiceDiscovery": true,
+      "UpstreamPathTemplate": "/A/{controller}/{action}", //上游API请求路由规则
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PUT" ], //上游API请求方法
+      "DownstreamPathTemplate": "/api/{controller}/{action}", //网关转发到下游路由规则
+      "DownstreamScheme": "https", //下游服务配置
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost", // 下游地址
+          "Port": 1011 //下游端口号  【模拟服务A】
+        }
+      ],
+      "ServiceName": "MyServiceAPIA",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "ReRoutesCaseSensitive": false
+      //  ,
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "APIAKey",
+      //  "AllowedScopes": []
+      //}
+    },
+    {
+      "UseServiceDiscovery": true,
+      "UpstreamPathTemplate": "/B/{controller}/{action}",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PUT" ],
+      "DownstreamPathTemplate": "/api/{controller}/{action}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 1012 //下游端口号  【模拟服务B】
+        }
+      ],
+      "ServiceName": "MyServiceAPIB",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "ReRoutesCaseSensitive": false
+    },
+    {
+      "UseServiceDiscovery": true,
+      "UpstreamPathTemplate": "/BB/{controller}/{action}",//根据servicename来分发请求，这个配置可以不用主从相同
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE", "PUT" ],
+      "DownstreamPathTemplate": "/api/{controller}/{action}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost", 
+          "Port": 10122 //下游端口号  【模拟服务B的热备】
+        }
+      ],
+      "ServiceName": "MyServiceAPIB",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "ReRoutesCaseSensitive": false
+    }
+  ]
+}

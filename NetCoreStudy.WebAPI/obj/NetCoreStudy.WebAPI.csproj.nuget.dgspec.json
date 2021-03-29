@@ -1,0 +1,431 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.WebAPI\\NetCoreStudy.WebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj",
+        "projectName": "NetCoreStudy.Core.Domain",
+        "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\undefined\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\undefined\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://172.10.254.10:8870/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\NetCoreStudy.Core.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\NetCoreStudy.Core.Infrastructure.csproj",
+        "projectName": "NetCoreStudy.Core.Infrastructure",
+        "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\NetCoreStudy.Core.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\undefined\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\undefined\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://172.10.254.10:8870/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj": {
+                "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\NetCoreStudy.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\NetCoreStudy.Domain.csproj",
+        "projectName": "NetCoreStudy.Domain",
+        "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\NetCoreStudy.Domain.csproj",
+        "packagesPath": "C:\\Users\\undefined\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\undefined\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://172.10.254.10:8870/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj": {
+                "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Domain\\NetCoreStudy.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\NetCoreStudy.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\NetCoreStudy.Infrastructure.csproj",
+        "projectName": "NetCoreStudy.Infrastructure",
+        "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\NetCoreStudy.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\undefined\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\undefined\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "http://172.10.254.10:8870/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\NetCoreStudy.Core.Infrastructure.csproj": {
+                "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Core.Infrastructure\\NetCoreStudy.Core.Infrastructure.csproj"
+              },
+              "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\NetCoreStudy.Domain.csproj": {
+                "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Domain\\NetCoreStudy.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[3.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.WebAPI\\NetCoreStudy.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.WebAPI\\NetCoreStudy.WebAPI.csproj",
+        "projectName": "NetCoreStudy.WebAPI",
+        "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.WebAPI\\NetCoreStudy.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\undefined\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\undefined\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "http://172.10.254.10:8870/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\NetCoreStudy.Infrastructure.csproj": {
+                "projectPath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\NetCoreStudy.Infrastructure\\NetCoreStudy.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Exceptionless.AspNetCore": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Ocelot": {
+              "target": "Package",
+              "version": "[17.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

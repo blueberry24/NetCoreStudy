@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "G52vIslTKSVS2CsTrVRPo/4POnbMZi0vwUb+cY9m+ZYnb7ULgvnMpwWMbvb6cVfZn7ExxwMOmaHXzXa1vdFzAA==",
+  "success": true,
+  "projectFilePath": "C:\\Workspace\\myworkspace\\NetCoreStudy\\Demo.ConsoleClient\\Demo.ConsoleClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\undefined\\.nuget\\packages\\identitymodel\\4.5.0\\identitymodel.4.5.0.nupkg.sha512",
+    "C:\\Users\\undefined\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\undefined\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
