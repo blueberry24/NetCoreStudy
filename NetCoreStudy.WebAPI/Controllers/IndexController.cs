@@ -111,5 +111,22 @@ namespace NetCoreStudy.WebAPI.Controllers
             var result = new { Success = true, Status = 200, Msg = "访问成功" };
             return Json(result);
         }
+
+        /// <summary>
+        /// 测试FromHeader标签
+        /// </summary>
+        /// <param name="header"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public IActionResult GetHeader([FromHeader] HeadParam header)
+        {
+            return Ok(header);
+        }
+    }
+
+    public class HeadParam
+    {
+        [FromHeader(Name = "Token")]
+        public string Token { get; set; }
     }
 }

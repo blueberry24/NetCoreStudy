@@ -2,6 +2,11 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
 /ConsulDemo.APIA/bin/Debug/netcoreapp3.1
 /ConsulDemo.APIA/obj/Debug/netcoreapp3.1
 /ConsulDemo.APIB/bin/Debug/netcoreapp3.1
@@ -33,3 +38,29 @@
 /NetCoreStudy.Infrastructure/obj/Debug/netcoreapp3.1
 /NetCoreStudy.WebAPI/bin/Debug/net5.0
 /NetCoreStudy.WebAPI/obj/Debug/net5.0
+NetCoreStudy.WebAPI/obj/project.nuget.cache
+*.json
+.vs/NetCoreStudy/v16/.suo
+.vs/NetCoreStudy/v17/.suo
+.vs/NetCoreStudy/v16/.suo
+*.sqlite
+*.json
+*.props
+*.targets
+NetCoreStudy.WebAPI/obj/project.nuget.cache
+*.json
+*.cache
+*.cache
+*.json
+*.props
+*.targets
+*.cache
+.vs/NetCoreStudy/v16/.suo
+.vs/NetCoreStudy/DesignTimeBuild/.dtbcache.v2
+.vs/NetCoreStudy/DesignTimeBuild/.dtbcache.v2
+NetCoreStudy.WebAPI/obj/project.nuget.cache
+.vs/NetCoreStudy/DesignTimeBuild/.dtbcache.v2
+.vs/NetCoreStudy/DesignTimeBuild/.dtbcache.v2
+.vs/NetCoreStudy/v16/.suo
+ConsulDemo.APIA/obj/project.assets.json
+ConsulDemo.APIA/obj/project.nuget.cache
