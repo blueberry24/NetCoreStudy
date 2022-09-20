@@ -18,6 +18,7 @@ namespace NetCoreStudy.Domain
         {
 
         }
+
         public Subject(string name, string description)
         {
             Id = Guid.NewGuid().ToString();
